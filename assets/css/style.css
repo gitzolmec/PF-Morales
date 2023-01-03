@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap');
+
+
+body{
+    background-image: url(../img/textura.jpg);
+    font-family: 'Montserrat', sans-serif;
+   
+}
+
+header{
+    padding-bottom: 100px;
+
+}
+section{
+    padding-top: 1000px;
+    z-index: 2;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.nombrevideo{
+    padding-top: 50px;
+    display: flex;
+
+    align-items:flex-end;
+}
+.nombrevideo h1{
+
+    color: whitesmoke;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 80px;
+
+}
+
+.nombrevideo h2{
+
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: auto;
+
+}
+
+.logo img{
+    width: 200px;
+}
+
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    z-index: 1;
+    
+    
+}
+  .car-ind{
+    position: absolute;
+    margin-top: 650px;
+    z-index: -1;
+    padding-bottom: 300px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+ } 
+
+
+.bar-btn{
+    font-size: 25px;
+    color: azure;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: right;
+    margin-top: 0;
+    
+}
+
+.bar-btn img{
+     width: 50px;
+}
+
+
+
+.nav-menu{
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(0,0,0, .95);
+    text-align: center;
+    transition: all .5s;
+    
+    
+
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+
+}
+
+
+.nav-menu li a{
+color: azure;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: 600;
+text-decoration: none;
+
+}
+
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: rgb(131, 10, 10);
+    transition: .3s;
+
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .nav-menu{
+    height: 100vh;
+    position: absolute;
+}
+
+
+#check:checked ~ .nav-menu li{
+    display:block;
+
+}
+
+@media only screen and (min-width: 1280px){
+
+    .bar-btn{
+        display: none;
+    }
+
+    .nav-menu{
+        display:flex; 
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+        background: rgb(0, 0, 0);
+        padding: 0;
+        position: absolute;
+        
+        
+    }
+    .nav-menu li{
+        line-height: 0;
+        margin: 10;
+        
+        display: block;
+    }
+  
+    .logo img{
+        width: 400px;
+        
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+    nav{
+
+        display: flex;
+       justify-content: center;
+       padding-left: 0;
+    }
+    
+    /*fin del responsive del index*/
+
+    .texto{
+        padding:0;
+        margin-top: 100px;
+    }
+
+
+    
+
+}
+
+/*aqui termina el estilo de index*/
+
+/*estilo de historia.html*/
+
+
+
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke;
+    height: fit-content;
+    background: rgba(0, 0, 0, 0.747);
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    
+}
+
+.texto h1{
+    
+    margin-bottom: 30px;
+}
+
+.body2{
+display: grid;
+grid-template-columns: 100%;
+grid-template-rows: 10% 10% 80%;
+grid-template-areas: 
+
+"header"
+".title"
+".texto"
+;
+}
+
+p{
+    align-items: center;
+    text-align: center;
+}
+
+/*fin estilo historia.html*/
+
+/*estilo banda.html*/
+
+
+
+
+
+.band_container{
+
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 10% 3% 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-template-areas: 
+   
+   ".logo"
+   "integrantes"
+   ".poly"
+   ".poly"
+   ".poly"
+   ".poly"
+   ".poly"
+    ;
+
+    
+}
+
+.imgcard{
+    width: 400px;
+    height: 600px;
+
+}
+
+.titulos{
+    display: flex;
+    padding-top: 100px;
+    align-items:flex-end;
+    
+}
+
+.titulos h1{
+
+    color: whitesmoke;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.poly{
+text-align: center;
+    
+margin-top: 4em; 
+width: 406px;
+height: 680px;
+background-color: black;
+color: whitesmoke;
+border-radius: 10px;
+border:solid 3px;
+border-color: black;
+font-weight: bolder;
+
+}
+
+.banda{
+
+   
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 1280px){
+
+    .banda{
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 200px;
+    }
+    
+    .titulos{
+
+        margin-top: 100px;
+    }
+
+  
+
+    .poly{
+       margin-right: 10px;
+
+    }
+
+   
+   
+}
+
+
+
+.container_disk{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 100px;
+
+}
+
+
+
+.album{
+        
+    margin-top: 100px; 
+    width: 406px;
+    height: 600px;
+    background-color: black;
+    
+    border-radius: 10px;
+    border:solid 3px;
+    border-color: black;
+    color: white;
+    
+}
+
+.caratula{
+width: 400px;
+height: 400px;
+border-radius: 10px 10px 0 0
+}
+
+.album p{
+    font-family: sans-serif;
+    margin-left: 30px;
+    text-align: left;
+    }
+
+h3{
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: 30px; 
+}
+
+.music{
+    display: inline-block;
+}
+
+.play{
+    width: 40px;
+    height: 40px;
+    margin-left: 180px;
+    float: right;
+}
+
+.title h1{
+    color: whitesmoke;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-top: 150px;
+    margin-bottom: 0;
+}
+
+.titleh h1{
+    color: whitesmoke;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-top: 120px;
+    margin-bottom: 0;
+}
+
+.titlef h1{
+    
+        color: whitesmoke;
+        font-weight: 900;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        
+        margin-top: 250px;
+        margin-bottom: 30px;
+    }
+
+   
+
+@media only screen and (min-width: 1280px){
+
+    
+    .container_disk{
+        display: block;
+  
+        }
+   
+   .album{
+    margin-left: 50px;
+    display: inline-block;
+   }
+}
+
+.containerf{
+    padding-bottom: 100px;
+    color: whitesmoke;
+}
+
+
+
+/*footer*/
+
+
+
+.pie-pagina{
+    width: 100%;
+    
+    
+    
+}
+
+.infoot{ 
+    
+    margin-top: 200px;
+
+}
+
+.grupo-1{
+    width: 100%;
+    
+    display:flex;
+    grid-gap:50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex-direction: column;
+   justify-content:space-around;
+}
+
+
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.red-social{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: black;
+    text-align: center;
+    transition: all 300ms ease;
+   
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: rgb(131, 10, 10);
+}
+.pie-pagina .grupo-2{
+    background-color: black;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+@media only screen and (min-width: 1280px){
+
+    .grupo-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+   
+   
+}
