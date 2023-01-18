@@ -17,6 +17,7 @@ header {
 
 .logo img {
     width: 200px;
+    margin-left: 20px;
 }
 nav {
     height: 100px;
@@ -148,12 +149,14 @@ nav {
 
     .logo img {
         width: 400px;
+        
     }
 
     .logo {
         display: flex;
         justify-content: center;
         align-items: flex-start;
+       
     }
 
     nav {
