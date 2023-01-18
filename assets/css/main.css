@@ -295,6 +295,7 @@ nav {
   border: solid 3px;
   border-color: black;
   color: whitesmoke;
+  margin-top: 50px;
 }
 .album p {
   font-family: sans-serif;

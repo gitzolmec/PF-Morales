@@ -365,6 +365,7 @@ nav {
     border: solid 3px;
     border-color: map-get(c.$colores, 'fondo-menu');
     color: map-get(c.$colores, 'textoclaro');
+    margin-top: 50px;
 
     p {
         font-family: sans-serif;
